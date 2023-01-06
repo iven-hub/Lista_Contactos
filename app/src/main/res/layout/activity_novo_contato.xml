@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NovoContato">
+
+    <!--edit text for user name-->
+
+    <EditText
+        android:id="@+id/idEdtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="Enter Name"
+        android:inputType="text"
+        android:minHeight="48dp" />
+    <!--edit text for user phone number-->
+    <EditText
+        android:id="@+id/idEdtPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="Enter Number"
+        android:inputType="phone"
+        android:minHeight="48dp" />
+    <!--edit text for user email-->
+    <EditText
+        android:id="@+id/idEdtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="Enter Email Address"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select your Sex:"
+        android:textSize="18sp"
+        android:layout_marginStart="8dp"
+        android:layout_margin="10dp"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/selectedMasc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masculino" />
+
+        <RadioButton
+            android:id="@+id/selectedFemin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feminino" />
+
+        <RadioButton
+            android:id="@+id/selectedOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="sexHandle"
+            android:text="Other" />
+    </RadioGroup>
+
+
+    <!--button for saving a new contact-->
+    <Button
+        android:id="@+id/AddContact"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_margin="10dp"
+        android:text="Save Contact"
+        android:textAllCaps="true" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_margin="10dp"
+        android:text="Cancel"
+        android:textAllCaps="true"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="10dp"
+        android:drawableBottom="@drawable/ic_back"
+        app:fabCustomSize="100dp"
+        app:icon="@drawable/ic_back"
+        app:tint="@color/black" />
+
+</LinearLayout>

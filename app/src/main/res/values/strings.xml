@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">ContactListproj</string>
+
+
+    <string-array name="numero">
+<!--        <item>5998349</item>
+        <item>5995349</item>
+        <item>9668349</item>
+        <item>9554210</item>
+        <item>5874563</item>
+        <item>5532152</item>
+        <item>9556321</item>
+        <item>9874563</item>
+        <item>5896321</item>
+        <item>5112233</item>-->
+    </string-array>
+
+    <string-array name="email">
+<!--        <item>Iven@gmail.com</item>
+        <item>Alex@gmail.com</item>
+        <item>Marvin@gmail.com</item>
+        <item>Leo@gmail.com</item>
+        <item>Lewa@gmail.com</item>
+        <item>Messi@gmail.com</item>
+        <item>Ronaldo@gmail.com</item>
+        <item>Marega@gmail.com</item>
+        <item>LuizDiaz@gmail.com</item>
+        <item>Alextelles@gmail.com</item>-->
+    </string-array>
+
+    <string-array name="nome">
+<!--        <item>Iven</item>
+       <item>Alex</item>
+        <item>Marvin</item>
+        <item>Leo</item>
+        <item>Lewa</item>
+        <item>Messi</item>
+        <item>Ronaldo</item>
+        <item>Marega</item>
+        <item>LuizDiaz</item>
+        <item>Alextelles</item>-->
+    </string-array>
+</resources>
