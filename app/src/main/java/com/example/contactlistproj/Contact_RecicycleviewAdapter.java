@@ -64,7 +64,7 @@ public class Contact_RecicycleviewAdapter extends RecyclerView.Adapter<Contact_R
 
 
     //esqueleto no nosso recycle
-    public static class MyViewHolder extends RecyclerView.ViewHolder implements View.OnCreateContextMenuListener {
+    public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnCreateContextMenuListener {
         //vai apanhar as views do nosso recycle-view layout tipo um one create metodo
         Context context;
         TextView Tvname, Tvnum, Tvemail;
@@ -135,6 +135,9 @@ public class Contact_RecicycleviewAdapter extends RecyclerView.Adapter<Contact_R
                 public boolean onMenuItemClick(MenuItem item) {
                     Toast.makeText(itemView.getContext(), "Remove " + DB.contactList.get(getLayoutPosition()).getNome(), Toast.LENGTH_SHORT).show();
                     DB.contactList.remove(getLayoutPosition());
+
+                    notifyDataSetChanged();
+
                     return false;
                 }
             });
